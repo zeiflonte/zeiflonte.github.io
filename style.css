@@ -1,0 +1,119 @@
+body {
+  background: url(./images/backt.jpg) bottom repeat;
+}
+h1 {
+  font-family: 'DS Arabic';
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffff00;
+  font-size: 55px;
+  text-shadow: 2px 2px green;
+  margin-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+h2 {
+  text-align: center;
+}
+h3 {
+  background: url(./images/page_head.jpg) bottom repeat-x;
+  background-size: contain;
+  text-align: center;
+
+  font-size: 90px;
+  font-family: 'DS Arabic';
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+section {	  
+  background: url(./images/back_short.jpg) bottom repeat-x #f6f6f6;
+  margin: 10px 0px 10px 225px; /* Значения отступов */
+  padding: 5px; /* Поля вокруг текста */
+  border: 1px solid #333; /* Параметры рамки */
+}
+li {
+  list-style-type: none;
+}
+.logo {
+  vertical-align: middle;
+  margin-left: 3px;
+  width: 5rem;
+  height: auto;
+}
+.sitehead {
+  background: #3cb371;
+  padding: 1px;
+}
+.sitefoot {
+  background: #81d4a6;
+  padding: 1px;
+  text-align: center;
+}
+.block {
+  background: #f6f6f6; 
+  float: left; /* Обтекание справа */
+  border: 1px solid #333; /* Параметры рамки вокруг */
+  width: 200px; /* Ширина колонки */
+  padding: 5px; /* Поля вокруг текста */
+  margin: 10px 10px 20px 0px; /* Значения отступов */
+}
+.block_header {
+  text-align: center;
+  background: #f6f6f6; 
+  border: 1px solid #333; /* Параметры рамки вокруг */
+  width: auto; /* Ширина колонки */
+  padding: 5px; /* Поля вокруг текста */
+
+}
+.country_name {
+  color: #28631a;
+  font-weight: 700;
+}
+.picture {
+  padding-right: 10px; /* Отступ слева */
+  padding-bottom: 10px; /* Отступ снизу */
+}
+.image {
+  width: 700px;
+}
+.leftpos
+{
+  float: left; /* Обтекание картинки по левому краю */
+}
+.rightpos
+{
+  float: right; /* Обтекание картинки по правому краю */
+}
+p.centerpos
+{
+  text-align: center;
+}
+.flag {
+  width: 50px;
+}
+.flag_mini {
+  padding-right: 5px;
+  width: 20px;
+}
+.author {
+  font-size: 20px;	
+  text-align: center;
+}
+.block a { 
+  display: block; /* Отображать ссылку как блок */
+  padding: 2px; /* Поля вокруг ссылок */
+  margin: 1px; /* Отступы вокруг */
+  font-size: 0.9em; /* Размер текста */
+  text-decoration: none; /* Убираем подчеркивание текста */
+}
+.block a:hover { 
+  background: #81d4a6; /* Цвет фона */
+  border: 1px dashed #634f36; /* Добавление пунктирной рамки */
+  margin: 0; /* Убираем поля */
+  padding: 1px; /* Поля вокруг ссылок */
+  margin-left: 1px;
+} 
+.block li {
+  margin-left: -25px;
+  margin-right: 20px;
+}
