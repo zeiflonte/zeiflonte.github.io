@@ -132,11 +132,6 @@ function checkFields(e)
         alert('Last name is empty');
         return;
     }
-    let email = document.getElementById('email').value;
-    if (email == '') {
-        alert('Email is empty');
-        return;
-    }
     if (chosenSkirt == '') {
         alert('A skirt has not been chosen');
         return;

@@ -23,22 +23,22 @@
         </div>
         <div id='form' class='form'>
             <form method="post">
-                <span class="menuText">Enter your first name:</span>
+                <span class="menuText">Enter your first name: (*)</span>
                 <p><input type="text" id="firstName"></p>
-                <span class="menuText">Enter last name:</span>
+                <span class="menuText">Enter last name: (*)</span>
                 <p><input type="text" id="lastName"></p>
                 <span class="menuText">Enter your email:</span>
                 <p><input type="email" id="email"></p>
             </form>
         </div>
         <div id='settings' class='settings'>
-            <span class="menuText">Choose the game level:</span>
+            <span class="menuText">Choose the game level: (*)</span>
             <select id="selectLevel" onchange="updateLevel()">
                 <option value="easy">Easy</option>
                 <option value="medium">Medium</option>
                 <option value="hard">Hard</option>
             </select><p></p>
-            <span class="menuText">Choose a card skirt:</span>
+            <span class="menuText">Choose a card skirt: (*)</span>
             <div id="cardSkirts" class="cardSkirts"></div>
 
             <p><input id="startButton"  type="submit" value="Start!"></p>
