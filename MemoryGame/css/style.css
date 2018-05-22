@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px 0;
+  background: #2E8B57;
+}
+
+h1 {
+    font-family: 'DS Arabic';
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 80px;
+    margin: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: #FFFFFF;
+    margin: 10px 0;
+}
+
+p {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.rules {
+    margin: auto 20px;
+}
+
+.menuText {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.form {
+    margin: auto 20px;
+    text-align: center;
+    margin: auto 20px;
+}
+
+.settings {
+    margin: auto 20px;
+}
+
+.endGame {
+    margin: 30px auto;
+    border: 2px solid #FFFFFF;
+}
+
+.cardSkirts {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid {
+  max-width: 2024px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.skirt {
+    background-size: cover;
+    margin: 5px;
+    height: 100px;
+    width: 150px;
+}
+
+.selectedSkirt {
+    border: 4px solid green;
+}
+
+.timerContainer {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 40px;
+}
+
+.minutes {
+    color: #beff61;
+}
+
+.card {
+  position: relative;
+  transition: all .4s linear;
+  transform-style: preserve-3d;
+  margin: 5px;
+}
+
+.card,
+.back,
+.front {
+  height: 200px;
+  width: 300px;
+}
+
+.back,
+.front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-size: contain;
+}
+
+.front {
+  background-size: cover;
+}
+
+.selected {
+  transform: rotateY(180deg);
+}
+
+.newRecordChapture {
+    color: #FFFF00;
+    font-weight: bold;
+}
+
+.tableCapture {
+    color: #EEE8AA;
+}
+
+.scoresTable {
+    margin: auto;
+    color: #EEE8AA;
+    border: 1px solid #EEE8AA;
+}
