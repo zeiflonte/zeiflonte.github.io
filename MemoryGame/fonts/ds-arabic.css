@@ -1,8 +1,0 @@
-@font-face {
-    font-family: 'DS Arabic';
-    font-style: normal;
-    font-weight: 400;
-    src: local('DS Arabic'), local('DSArabic-Regular'),
-        url(./ds-arabic_f5f42a94afc245af122a843685e68973.woff) format('woff'),
-        url(./ds-arabic_f5f42a94afc245af122a843685e68973.ttf) format('truetype');
-}

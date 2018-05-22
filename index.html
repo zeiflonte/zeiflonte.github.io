@@ -1,49 +1,59 @@
+<!doctype html>
 <html>
+
 <head>
-  <title>Арабский мир</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="./fonts/ds-arabic.css">
+    <title>MosqueCard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="./fonts/ds-arabic.css">
 </head>
+
 <body>
+    <header>
+        <h1>MosqueCard</h1>
+    </header>
+    <div id='start' class='start'>
+        <div class='rules'>
+            <h2>Hi!</h2>
+            <p>Memory is a counter game where the object is to find pairs.</p> 
+            <p>When the game begins, all pictures are hidden.</p>
+            <h2>To Play</h2>
+            <p>1. Select two cards to try to match the pictures.</p>
+            <p>2. Try to do it as quick as possible.</p>
+            <p>3. Have Fun!</p>
+        </div>
+        <div id='form' class='form'>
+            <form method="post">
+                <span class="menuText">Enter your first name:</span>
+                <p><input type="text" id="firstName"></p>
+                <span class="menuText">Enter last name:</span>
+                <p><input type="text" id="lastName"></p>
+                <span class="menuText">Enter your email:</span>
+                <p><input type="email" id="email"></p>
+            </form>
+        </div>
+        <div id='settings' class='settings'>
+            <span class="menuText">Choose the game level:</span>
+            <select id="selectLevel" onchange="updateLevel()">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select><p></p>
+            <span class="menuText">Choose a card skirt:</span>
+            <div id="cardSkirts" class="cardSkirts"></div>
 
-  <div class="sitehead">
-    <a href="./index.html"><img class="logo" src="./images/logo.png" alt="Логотип"></a>
-	<h1>Арабский мир</h1>
-  </div>
+            <p><input id="startButton"  type="submit" value="Start!"></p>
+        </div>
+    </div>
+    <div id='game'></div>
+    <div id='endGame' class='endGame'>
+        <h2 id='congratsCapture'>Congratulations, </h2>
+        <p>You won this game.</p> 
+        <p id='timeScore'>Your time is </p>
+        <p class='tableCapture'>TOP30:</p>
+        <table id='scoresTable' class='scoresTable'></table>
+        <p><input id="replayButton" type="submit" value="Replay!"></p>
+    </div>
+    <script src='js/script.js'></script>
+</body> 
 
-<aside>
-  <div class="block">
-    <div class="block_header">
-	Меню сайта
-	</div>
-	
-	<ul>
-      <li><a href="./index.html">Главная</a></li>
-      <li><a href="./iraq.html">Ирак</a></li>
-      <li><a href="./yemen.html">Йемен</a></li>
-      <li><a href="./saudi_arabia.html">Саудовская Аравия</a></li>
-      <li><a href="./about.html">Об Авторе</a></li>
-    </ul>
-  </div>
-</aside>
-
-<section>
-  <div class="main">
-    <h3>Добро пожаловать!</h2> 
-	<p>Вы находитесь на сайте-путеводителе по странам Арабского мира. Здесь вы сможете познакомиться ближе с уникальной культурой, известной с древнейших времен, загадочными странами и удивительными людьми, гостеприимство и добролюбие которых никого не оставит равнодушным.</p>
-	<p>В настоящее время доступны следующие страны:</p>
-	<ul>
-      <li><img class="flag_mini" src="./images/iq.png" alt="Флаг Ирака">Ирак</li>
-	  <li><img class="flag_mini" src="./images/ye.png" alt="Флаг Йемена">Йемен</li>      
-	  <li><img class="flag_mini" src="./images/sa.png" alt="Флаг Саудовской Аравии">Саудовская Аравия</li>
-    </ul>
-  </div>
-</section>
-
-
-  <div class="sitefoot">
-    © Илья Савенок
-  </div>
-
-</body>
 </html>
