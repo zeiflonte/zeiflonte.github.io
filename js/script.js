@@ -153,6 +153,9 @@ function game()
     // Duplicate array to create a match for each card
     gameGrid = gameGrid.concat(gameGrid);
 
+    // Randomize game grid on each load
+    gameGrid.sort(() => 0.5 - Math.random());
+    
     // Grab the div with an id of root
     const game = document.getElementById('game'); 
     
